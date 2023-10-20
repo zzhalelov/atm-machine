@@ -4,10 +4,8 @@ public class ATM {
     private double withdrawAmount;
     //constructor
 
-    public ATM(double balance, double deposit_amount, double withdrawAmount) {
-        this.balance = balance;
-        this.deposit_amount = deposit_amount;
-        this.withdrawAmount = withdrawAmount;
+    public ATM() {
+
     }
 
     //getter setter

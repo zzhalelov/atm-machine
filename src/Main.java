@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        AtmOperationInterf op = new AtmOperationImpl();
         int atmnumber = 12345;
         int atmpin = 123;
         Scanner in = new Scanner(System.in);
@@ -16,11 +17,13 @@ public class Main {
                 System.out.println("ENTER CHOICE: ");
                 int ch = in.nextInt();
                 if (ch == 1) {
-
+                    op.viewBalance();
                 } else if (ch == 2) {
 
                 } else if (ch == 3) {
-
+                    System.out.println("Enter Amount To Deposit: ");
+                    double depositAmount = in.nextDouble();//5000
+                    op.depositAmount(depositAmount);
                 } else if (ch == 4) {
 
                 } else if (ch == 5) {
