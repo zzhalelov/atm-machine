@@ -2,14 +2,13 @@ public class ATM {
     private double balance;
     private double deposit_amount;
     private double withdrawAmount;
-    //constructor
 
+    //constructor
     public ATM() {
 
     }
 
     //getter setter
-
     public double getBalance() {
         return balance;
     }
